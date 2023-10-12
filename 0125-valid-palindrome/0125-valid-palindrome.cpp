@@ -15,10 +15,6 @@ public:
                 ++iNowIdx;
             }
         }
-        cout << s.length()<< endl;
-        cout << s << endl;
-        
-        // 제거 완
 
         if(0 == s.length()) {return true;}
 
@@ -35,7 +31,6 @@ public:
                 
                if(s[i] != s[s.length()-1-i])
                {
-                    //cout << s.length() << endl << s[i] << endl << s[s.length()-1-i] << endl;
                     if(32 == abs((s[i] - s[s.length()-1-i])))
                     { 
                         if( isdigit(s[i]) || isdigit(s[s.length()-1-i])  ) 
@@ -53,7 +48,6 @@ public:
         }
         else // 홀수
         {
-            cout << "here";
             for(int i = 0; i<= sCutLen; ++i)
             {
                 if(i == sCutLen) // 마지막 지점이면
