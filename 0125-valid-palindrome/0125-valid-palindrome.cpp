@@ -19,9 +19,7 @@ public:
         if(0 == s.length()) {return true;}
 
         int sCutLen = s.length()/2;
-
-        if( 0 == s.length() %2 ) // 짝수
-        {
+        
             for(int i = 0; i< s.length(); ++i)
             { 
                 if(i == sCutLen) // 마지막 지점이면
@@ -45,9 +43,7 @@ public:
                }
             }
             return false;
-        }
-        else // 홀수
-        {
+
             for(int i = 0; i<= sCutLen; ++i)
             {
                 if(i == sCutLen) // 마지막 지점이면
@@ -71,7 +67,5 @@ public:
                 }
             }
             return false;
-        }
-        return true;
     }
 };
