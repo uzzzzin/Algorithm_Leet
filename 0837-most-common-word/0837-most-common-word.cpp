@@ -99,20 +99,20 @@ public:
 
         // --------------------------------------------------------------
         // return값 바꿔주기.
-        cout << "------------------------------------------" << endl;
-        cout << "paragraph : " << paragraph << endl;
-        for(int i = 0; i < vec_0Idx.size(); ++i)
-        {
-            cout << "vec_0Idx[" << i <<"] : " << vec_0Idx[i] << endl;
-        }
-        for(int i = 0; i < vec_sPara.size(); ++i)
-        {
-            cout << "vec_sPara[" << i <<"] : " << vec_sPara[i] << endl;
-        }
-        for(map<string,int>::iterator it = wordCnt.begin(); it != wordCnt.end(); ++it)
-        {
-            cout << it->first << "-" << it->second << endl;
-        }
+        // cout << "------------------------------------------" << endl;
+        // cout << "paragraph : " << paragraph << endl;
+        // for(int i = 0; i < vec_0Idx.size(); ++i)
+        // {
+        //     cout << "vec_0Idx[" << i <<"] : " << vec_0Idx[i] << endl;
+        // }
+        // for(int i = 0; i < vec_sPara.size(); ++i)
+        // {
+        //     cout << "vec_sPara[" << i <<"] : " << vec_sPara[i] << endl;
+        // }
+        // for(map<string,int>::iterator it = wordCnt.begin(); it != wordCnt.end(); ++it)
+        // {
+        //     cout << it->first << "-" << it->second << endl;
+        // }
 
         return mostWord;
     }
@@ -128,11 +128,3 @@ public:
 // 그리고 그 답은 독특함.아니 고유함.. ?
 // paragraph에 든 단어들은 대소문자 구분 안 하고, 답은 무조건 소문자로 리턴되어야 함. 특문 다 빼야 할 듯.
 
-            // if(it == wordCnt.begin())
-            // {
-            //     for(int i = 0; i < banned.size(); ++i)
-            //     {
-            //         if(it->first == banned[i])
-            //             break;
-            //     }
-            // }
