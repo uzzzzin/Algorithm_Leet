@@ -22,20 +22,12 @@ public:
 
         Diff(root->left);
 
-        cout << root->val << " ";
-
         int absDiff = abs(prevVal - root->val);
         if(absDiff < abs(minDiff))
             minDiff = absDiff;
-        cout << prevVal << endl;
-
         prevVal = root->val;
-
-
-
-
+        
         Diff(root->right);
-
         return;
     }
 
